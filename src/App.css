@@ -1,0 +1,96 @@
+.app-container {
+  display: flex;
+  flex-direction: column;   /* stack items vertically */
+  justify-content: center;  /* center vertically */
+  align-items: center;      /* center horizontally */
+  min-height: 100vh;        /* full viewport height */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+form {
+  display: flex;
+  gap: 10px;               /* space between input and button */
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+li input[type="text"] {
+  flex: 1; /* so input fills space nicely */
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+li button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #218838;
+}
+
+li button:nth-of-type(2) { /* Delete button */
+  background-color: #dc3545;
+}
+
+li button:nth-of-type(2):hover {
+  background-color: #c82333;
+}
